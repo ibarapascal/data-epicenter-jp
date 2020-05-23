@@ -1,12 +1,303 @@
 # Data of earthquake epicenter in Japan
 
-## What do we have here
+## 1. Look what we've got here
 
-Format Japan epicenter data in csv, json for further usage.  
+- Formated Japan epicenter data in csv, json.  
 
-## Context
+- Some JS Scripts to do it and other customized usage.
 
-## Data source
+## 2. Data
+
+### 2.1. The base csv
+
+[Raw data (~330MB)](https://github.com/ibarapascal/data-epicenter-jp/tree/master/raw) from [official source](#Source) => formated [csv data (~430MB)](https://github.com/ibarapascal/data-epicenter-jp/tree/master/csv/base) which can be used easier.
+
+Time Range: 1983 - 201808
+
+formated (base):  
+
+<table class="js-csv-data csv-data js-file-line-container">
+  <thead>
+    <tr id="LC1" class="js-file-line">
+      <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+      <th>tag</th>
+      <th>year</th>
+      <th>month</th>
+      <th>day</th>
+      <th>hour</th>
+      <th>minute</th>
+      <th>second</th>
+      <th>time_se</th>
+      <th>latitude</th>
+      <th>latitude_m</th>
+      <th>latitude_se</th>
+      <th>longitude</th>
+      <th>longitude_m</th>
+      <th>longitude_se</th>
+      <th>depth</th>
+      <th>depth_se</th>
+      <th>magnitude_a</th>
+      <th>magnitude_a_type</th>
+      <th>magnitude_b</th>
+      <th>magnitude_b_type</th>
+      <th>time_table</th>
+      <th>evaluation</th>
+      <th>info_assistance</th>
+      <th>max_seismic</th>
+      <th>damate_scale</th>
+      <th>tsunami_scale</th>
+      <th>area_large</th>
+      <th>area_small</th>
+      <th>region</th>
+      <th>observation_points</th>
+      <th>flag</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id="LC2" class="js-file-line">
+      <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
+      <td>J</td>
+      <td>2018</td>
+      <td>01</td>
+      <td>01</td>
+      <td>00</td>
+      <td>02</td>
+      <td>52.91</td>
+      <td>0.07</td>
+      <td>37</td>
+      <td>1306</td>
+      <td>020</td>
+      <td>138</td>
+      <td>4804</td>
+      <td>029</td>
+      <td>12.64</td>
+      <td>1.03</td>
+      <td>1.5</td>
+      <td>V</td>
+      <td>0</td>
+      <td></td>
+      <td>5</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>4</td>
+      <td>132</td>
+      <td>MID NIIGATA PREF</td>
+      <td>32</td>
+      <td>A</td>
+    </tr>
+    <tr id="LC3" class="js-file-line">
+      <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+      <td>J</td>
+      <td>2018</td>
+      <td>01</td>
+      <td>01</td>
+      <td>00</td>
+      <td>05</td>
+      <td>10.38</td>
+      <td>0.07</td>
+      <td>37</td>
+      <td>0474</td>
+      <td>014</td>
+      <td>136</td>
+      <td>4629</td>
+      <td>035</td>
+      <td>10.19</td>
+      <td>0.71</td>
+      <td>1</td>
+      <td>V</td>
+      <td>0</td>
+      <td></td>
+      <td>5</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>4</td>
+      <td>135</td>
+      <td>NOTO PENINSULA REGION</td>
+      <td>10</td>
+      <td>k</td>
+    </tr>
+    <tr id="LC4" class="js-file-line">
+      <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
+      <td>J</td>
+      <td>2018</td>
+      <td>01</td>
+      <td>01</td>
+      <td>00</td>
+      <td>05</td>
+      <td>39.8</td>
+      <td>0.17</td>
+      <td>33</td>
+      <td>1850</td>
+      <td>054</td>
+      <td>139</td>
+      <td>2995</td>
+      <td>224</td>
+      <td>22.44</td>
+      <td>4.24</td>
+      <td>2.1</td>
+      <td>V</td>
+      <td>0</td>
+      <td></td>
+      <td>5</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>3</td>
+      <td>105</td>
+      <td>NEAR HACHIJOJIMA ISLAND</td>
+      <td>14</td>
+      <td>A</td>
+    </tr>
+  </tbody>
+</table>
+
+before (raw):  
+
+<table
+  class="highlight tab-size js-file-line-container"
+  data-tab-size="8"
+  data-paste-markdown-skip=""
+>
+  <tbody>
+    <tr>
+      <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+      <td id="LC1" class="blob-code blob-code-inner js-file-line">
+        J2018010100025291 007 371306 020 1384804 029 126410315V 511 4132MID
+        NIIGATA PREF 32A
+      </td>
+    </tr>
+    <tr>
+      <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
+      <td id="LC2" class="blob-code blob-code-inner js-file-line">
+        J2018010100051038 007 370474 014 1364629 035 101907110V 511 4135NOTO
+        PENINSULA REGION 10k
+      </td>
+    </tr>
+    <tr>
+      <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+      <td id="LC3" class="blob-code blob-code-inner js-file-line">
+        J2018010100053980 017 331850 054 1392995 224 224442421V 511 3105NEAR
+        HACHIJOJIMA ISLAND 14A
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+### 2.2 Generated usage sample
+
+Smaller, usable [sample data](https://github.com/ibarapascal/data-epicenter-jp/tree/master/csv/sample) created by the [script](#Scripts)
+
+- reduced attributes.
+- limited range of latitude and longitude to JP.  
+- limited the magnitude to M1, M3, M5.  
+
+<table class="js-csv-data csv-data js-file-line-container">
+  <thead>
+    <tr id="LC1" class="js-file-line">
+      <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <th>depth</th>
+        <th>magnitude_a</th>
+        <th>time</th>
+        <th>latitude</th>
+        <th>longitude</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr id="LC2" class="js-file-line">
+        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
+          <td>388</td>
+          <td>7</td>
+          <td>19840101180341</td>
+          <td> 33374 </td>
+          <td> 136503 </td>
+      </tr>
+      <tr id="LC3" class="js-file-line">
+        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+          <td>43</td>
+          <td>5.6</td>
+          <td>19840117201340.6</td>
+          <td> 36271 </td>
+          <td> 141146 </td>
+      </tr>
+      <tr id="LC4" class="js-file-line">
+        <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
+          <td>43</td>
+          <td>5.9</td>
+          <td>19840118003156.3</td>
+          <td> 36269 </td>
+          <td> 141158 </td>
+      </tr>
+      <tr id="LC5" class="js-file-line">
+        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
+          <td>87</td>
+          <td>5.6</td>
+          <td>19840123163456.2</td>
+          <td> 29085 </td>
+          <td> 130392 </td>
+      </tr>
+      <tr id="LC6" class="js-file-line">
+        <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
+          <td>70</td>
+          <td>5.1</td>
+          <td>1984012518355.8</td>
+          <td> 42144 </td>
+          <td> 143098 </td>
+      </tr>
+  </tbody>
+</table>
+
+[DT_JP_BaseAttrs_M5.csv](https://github.com/ibarapascal/data-epicenter-jp/blob/master/csv/sample/DT_JP_BaseAttrs_M5.csv): 5.8k records, 0.2MB  
+[DT_JP_BaseAttrs_M3.csv](https://github.com/ibarapascal/data-epicenter-jp/blob/master/csv/sample/DT_JP_BaseAttrs_M3.csv): 206k records, 8.5MB  
+[DT_JP_BaseAttrs_M1.csv](https://github.com/ibarapascal/data-epicenter-jp/blob/master/csv/sample/DT_JP_BaseAttrs_M1.csv): 1.8M records, 79.7MB
+
+_Notice that github allows max 100MB for a single file, so we are still safe for another couple of years. :)_  
+_[Github: Working with large files](https://help.github.com/en/github/managing-large-files/working-with-large-files)_
+
+JSON: TODO
+
+## 3. Scripts
+
+### [raw2csv.js](https://github.com/ibarapascal/data-epicenter-jp/blob/master/src/raw2csv.js)
+
+>Generate the formated base csv.
+
+Basically keep untouched.
+
+### [raw2usercase.js](https://github.com/ibarapascal/data-epicenter-jp/blob/master/src/raw2usercase.js)
+
+>Generate the data you can use in your project. See the [sample data](https://github.com/ibarapascal/data-epicenter-jp/tree/master/csv/sample)
+
+Feel free to customize this to make the data happy for your use case.
+
+## 4. Develop
+
+### 4.1. Quick Start
+
+a). Clone the repo (no need for large dir `/csv`, `/raw`)
+
+```
+npm install
+```
+
+b). Open vscode, uncomment the js you want to play with inside the [vscode launcher settings](https://github.com/ibarapascal/data-epicenter-jp/blob/master/.vscode/launch.json)
+
+c). Press **F5**.
+
+### 4.2. npm scripts, CLI, CI
+
+TODO
+
+---
+
+## 5. Source
 
 [国土交通省気象庁 Japan Meteorological Agency](https://www.data.jma.go.jp/svd/eqev/data/bulletin/hypo.html)
 

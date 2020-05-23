@@ -10,7 +10,7 @@
 
 ### 2.1. The base csv
 
-[Raw data (~330MB)](https://github.com/ibarapascal/data-epicenter-jp/tree/master/raw) from [official source](#Source) => formated [csv data (~430MB)](https://github.com/ibarapascal/data-epicenter-jp/tree/master/csv/base) which can be used easier.
+[Raw data (~330MB)](https://github.com/ibarapascal/data-epicenter-jp/tree/master/raw) from [official source](#6-source) => formated [csv data (~430MB)](https://github.com/ibarapascal/data-epicenter-jp/tree/master/csv/base) which can be used easier.
 
 Time Range: 1983 - 201808
 
@@ -122,40 +122,6 @@ formated (base):
       <td>10</td>
       <td>k</td>
     </tr>
-    <tr id="LC4" class="js-file-line">
-      <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
-      <td>J</td>
-      <td>2018</td>
-      <td>01</td>
-      <td>01</td>
-      <td>00</td>
-      <td>05</td>
-      <td>39.8</td>
-      <td>0.17</td>
-      <td>33</td>
-      <td>1850</td>
-      <td>054</td>
-      <td>139</td>
-      <td>2995</td>
-      <td>224</td>
-      <td>22.44</td>
-      <td>4.24</td>
-      <td>2.1</td>
-      <td>V</td>
-      <td>0</td>
-      <td></td>
-      <td>5</td>
-      <td>1</td>
-      <td>1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>3</td>
-      <td>105</td>
-      <td>NEAR HACHIJOJIMA ISLAND</td>
-      <td>14</td>
-      <td>A</td>
-    </tr>
   </tbody>
 </table>
 
@@ -181,19 +147,12 @@ before (raw):
         PENINSULA REGION 10k
       </td>
     </tr>
-    <tr>
-      <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
-      <td id="LC3" class="blob-code blob-code-inner js-file-line">
-        J2018010100053980 017 331850 054 1392995 224 224442421V 511 3105NEAR
-        HACHIJOJIMA ISLAND 14A
-      </td>
-    </tr>
   </tbody>
 </table>
 
 ### 2.2 Generated usage sample
 
-Smaller, usable [sample data](https://github.com/ibarapascal/data-epicenter-jp/tree/master/csv/sample) created by the [script](#Scripts)
+Smaller, usable [sample data](https://github.com/ibarapascal/data-epicenter-jp/tree/master/csv/sample) created by the [script](#3-scripts)
 
 - reduced attributes.
 - limited range of latitude and longitude to JP.  
@@ -295,9 +254,15 @@ c). Press **F5**.
 
 TODO
 
+## 5. Applications
+
+Optionaly use [plotly.js](https://plotly.com/javascript/) or [ArcGIS.js](https://developers.arcgis.com/javascript/latest/sample-code/visualization-vv-opacity-animate/index.html) to show it!
+
+TODO
+
 ---
 
-## 5. Source
+## 6. Source
 
 [国土交通省気象庁 Japan Meteorological Agency](https://www.data.jma.go.jp/svd/eqev/data/bulletin/hypo.html)
 

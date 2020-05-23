@@ -1,4 +1,4 @@
-tag,year,month,day,hour,minute,second,time_se,latitude,latitude_m,latitude_se,longitude,longitude_m,longitude_se,depth,depth_se,magnitude_a,magnitude_a_type,magnitude_b,magnitude_b_type,timetable,evaluation,info_assistance,max_seismic,damate_scale,tsunami_scale,area_large,area_Small,region,observation_points,flag
+tag,year,month,day,hour,minute,second,time_se,latitude,latitude_m,latitude_se,longitude,longitude_m,longitude_se,depth,depth_se,magnitude_a,magnitude_a_type,magnitude_b,magnitude_b_type,time_table,evaluation,info_assistance,max_seismic,damate_scale,tsunami_scale,area_large,area_small,region,observation_points,flag
 J,2018,05,01,00,03,3.36,0.2, 41,5013, 045, 142,0004, 073,64.33,2.54,0.9,V,0, ,5,1,1, , , ,1, 30,S OFF URAKAWA           ,  8,k
 J,2018,05,01,00,06,20.46,0.09, 32,4377, 017, 131,5998, 037,12.84,0.82,0.6,V,0, ,5,1,1, , , ,7,300,HYUGANADA REGION        , 21,A
 J,2018,05,01,00,06,27.12,0.14, 36,1867, 031, 140,4894, 069,43.05,0.98,0.9,V,0, ,5,1,1, , , ,3,111,E OFF IBARAKI PREF      , 24,A

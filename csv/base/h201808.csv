@@ -1,4 +1,4 @@
-tag,year,month,day,hour,minute,second,time_se,latitude,latitude_m,latitude_se,longitude,longitude_m,longitude_se,depth,depth_se,magnitude_a,magnitude_a_type,magnitude_b,magnitude_b_type,timetable,evaluation,info_assistance,max_seismic,damate_scale,tsunami_scale,area_large,area_Small,region,observation_points,flag
+tag,year,month,day,hour,minute,second,time_se,latitude,latitude_m,latitude_se,longitude,longitude_m,longitude_se,depth,depth_se,magnitude_a,magnitude_a_type,magnitude_b,magnitude_b_type,time_table,evaluation,info_assistance,max_seismic,damate_scale,tsunami_scale,area_large,area_small,region,observation_points,flag
 J,2018,08,01,00,03,25.1,0.08, 35,0030, 016, 139,0331, 036,0,0,-0.4,v,0, ,5,2,1, , , ,4,155,CENTRAL IZU PENINSULA   ,  6,a
 J,2018,08,01,00,03,45.39,0.04, 32,3775, 013, 130,4163, 018,10.95,0.69,0.8,V,0, ,5,1,1, , , ,7,271,SOUTHERN KUMAMOTO PREF  , 32,A
 J,2018,08,01,00,04,20.34,0.37, 36,3658, 042, 138,2175, 046,1.28,4.67,1.6,V,0, ,5,1,1, , , ,4,145,NEAR MATSUSHIRO         , 12,k

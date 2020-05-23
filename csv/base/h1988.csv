@@ -1,4 +1,4 @@
-tag,year,month,day,hour,minute,second,time_se,latitude,latitude_m,latitude_se,longitude,longitude_m,longitude_se,depth,depth_se,magnitude_a,magnitude_a_type,magnitude_b,magnitude_b_type,timetable,evaluation,info_assistance,max_seismic,damate_scale,tsunami_scale,area_large,area_Small,region,observation_points,flag
+tag,year,month,day,hour,minute,second,time_se,latitude,latitude_m,latitude_se,longitude,longitude_m,longitude_se,depth,depth_se,magnitude_a,magnitude_a_type,magnitude_b,magnitude_b_type,time_table,evaluation,info_assistance,max_seismic,damate_scale,tsunami_scale,area_large,area_small,region,observation_points,flag
 J,1988,01,01,01,11,56.6,0.2, 34,559 , 03 , 139,173 , 03 ,10.4,2.3,0.5,V,0, ,1,7,2, , , ,3,100,E OFF IZU PENINSULA     ,   ,S
 J,1988,01,01,01,56,17,0.2, 34,519 , 03 , 138,526 , 04 ,11.4,2.5,-0.2,V,0, ,1,7,2, , , ,4,155,CENTRAL IZU PENINSULA   ,   ,S
 J,1988,01,01,02,39,28.6,0.4, 37,238 , 21 , 139,475 , 20 ,121,0,2,V,0, ,1,2,1, , , ,2, 54,WESTERN FUKUSHIMA PREF  ,   ,K

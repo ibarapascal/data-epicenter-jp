@@ -1,4 +1,4 @@
-tag,year,month,day,hour,minute,second,time_se,latitude,latitude_m,latitude_se,longitude,longitude_m,longitude_se,depth,depth_se,magnitude_a,magnitude_a_type,magnitude_b,magnitude_b_type,timetable,evaluation,info_assistance,max_seismic,damate_scale,tsunami_scale,area_large,area_Small,region,observation_points,flag
+tag,year,month,day,hour,minute,second,time_se,latitude,latitude_m,latitude_se,longitude,longitude_m,longitude_se,depth,depth_se,magnitude_a,magnitude_a_type,magnitude_b,magnitude_b_type,time_table,evaluation,info_assistance,max_seismic,damate_scale,tsunami_scale,area_large,area_small,region,observation_points,flag
 U,1987,01,01,03,24,22.2,0, 49,106 ,    , 156,278 ,    ,44,0,5.1,B,5.1,S, , , , , , ,9,   ,KURIL ISLANDS           ,   , 
 J,1987,01,01,03,33,52.4,0.1, 36,323 , 04 , 137,562 , 04 ,6,0,0, ,0, ,1,2,1, , , ,4,144,NORTHERN NAGANO PREF    ,   ,K
 J,1987,01,01,04,21,6.9,0.1, 36,327 , 06 , 137,562 , 05 ,0,0,0, ,0, ,1,2,1, , , ,4,144,NORTHERN NAGANO PREF    ,   ,K

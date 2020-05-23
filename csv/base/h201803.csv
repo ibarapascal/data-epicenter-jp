@@ -1,4 +1,4 @@
-tag,year,month,day,hour,minute,second,time_se,latitude,latitude_m,latitude_se,longitude,longitude_m,longitude_se,depth,depth_se,magnitude_a,magnitude_a_type,magnitude_b,magnitude_b_type,timetable,evaluation,info_assistance,max_seismic,damate_scale,tsunami_scale,area_large,area_Small,region,observation_points,flag
+tag,year,month,day,hour,minute,second,time_se,latitude,latitude_m,latitude_se,longitude,longitude_m,longitude_se,depth,depth_se,magnitude_a,magnitude_a_type,magnitude_b,magnitude_b_type,time_table,evaluation,info_assistance,max_seismic,damate_scale,tsunami_scale,area_large,area_small,region,observation_points,flag
 J,2018,03,01,00,01,52.55,0.06, 33,5635, 014, 135,1294, 019,7.4,0.69,0.3,V,0, ,5,1,1, , , ,5,191,CENTRAL WAKAYAMA PREF   , 10,k
 J,2018,03,01,00,06,28.43,0.11, 24,1456, 032, 123,4931, 028,14.99,1.2,1.7,V,0, ,5,1,1, , , ,7,290,NEAR ISHIGAKIJIMA ISLAND, 10,K
 J,2018,03,01,00,07,20.35,0.16, 24,1452, 031, 123,4865, 038,17.51,1.45,0, ,0, ,5,1,1, , , ,7,290,NEAR ISHIGAKIJIMA ISLAND,  6,k

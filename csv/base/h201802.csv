@@ -1,4 +1,4 @@
-tag,year,month,day,hour,minute,second,time_se,latitude,latitude_m,latitude_se,longitude,longitude_m,longitude_se,depth,depth_se,magnitude_a,magnitude_a_type,magnitude_b,magnitude_b_type,timetable,evaluation,info_assistance,max_seismic,damate_scale,tsunami_scale,area_large,area_Small,region,observation_points,flag
+tag,year,month,day,hour,minute,second,time_se,latitude,latitude_m,latitude_se,longitude,longitude_m,longitude_se,depth,depth_se,magnitude_a,magnitude_a_type,magnitude_b,magnitude_b_type,time_table,evaluation,info_assistance,max_seismic,damate_scale,tsunami_scale,area_large,area_small,region,observation_points,flag
 J,2018,02,01,00,00,25.79,0.11, 35,5803, 038, 140,0787, 051,58.17,0.8,0.5,V,0, ,5,1,1, , , ,3, 87,SOUTHERN IBARAKI PREF   , 20,A
 J,2018,02,01,00,02,33.8,0.21, 36,2045, 054, 140,5331, 100,29.19,1.73,0.3,V,0, ,5,1,1, , , ,3,111,E OFF IBARAKI PREF      , 10,k
 J,2018,02,01,00,07,4.71,0.12, 32,0801, 039, 132,0514, 046,18.48,3.81,0, ,0, ,5,1,1, , , ,7,300,HYUGANADA REGION        , 10,k

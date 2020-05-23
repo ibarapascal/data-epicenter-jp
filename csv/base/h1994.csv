@@ -1,4 +1,4 @@
-tag,year,month,day,hour,minute,second,time_se,latitude,latitude_m,latitude_se,longitude,longitude_m,longitude_se,depth,depth_se,magnitude_a,magnitude_a_type,magnitude_b,magnitude_b_type,timetable,evaluation,info_assistance,max_seismic,damate_scale,tsunami_scale,area_large,area_Small,region,observation_points,flag
+tag,year,month,day,hour,minute,second,time_se,latitude,latitude_m,latitude_se,longitude,longitude_m,longitude_se,depth,depth_se,magnitude_a,magnitude_a_type,magnitude_b,magnitude_b_type,time_table,evaluation,info_assistance,max_seismic,damate_scale,tsunami_scale,area_large,area_small,region,observation_points,flag
 J,1994,01,01,00,17,45.4,0.6, 42,120 , 25 , 144,024 , 20 ,32,0,2.1,V,0, ,1,2,1, , , ,1, 28,SE OFF TOKACHI          ,   ,K
 J,1994,01,01,00,25,57,0, 32,455 , 02 , 130,423 , 04 ,11.6,0.6,0, ,0, ,1,1,1, , , ,7,269,NW KUMAMOTO PREF        ,   ,K
 J,1994,01,01,00,43,30.1,0.1, 32,444 , 14 , 130,171 , 04 ,1.4,1.4,1.7,V,0, ,1,1,1,1, , ,7,267,NEAR UNZENDAKE          ,   ,K

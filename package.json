@@ -1,0 +1,15 @@
+{
+  "name": "data-epicenter-jp",
+  "version": "1.0.0",
+  "description": "Formated Japan epicenter GIS data in csv, json for further usage.",
+  "main": "main.js",
+  "dependencies": {
+    "csv-parser": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

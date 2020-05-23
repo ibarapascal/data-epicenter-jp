@@ -4,7 +4,7 @@ const wt = require(path.join(__dirname, '\\services\\writeFile'));
 const process = require(path.join(__dirname, '\\services\\dataProcess'));
 
 const saveName = 'DT_JP_BaseAttrs_M5';
-const savePath = `csv\\${saveName}.csv`;
+const savePath = `csv\\sample\\${saveName}.csv`;
 
 let result = [];
 let counter = 0;

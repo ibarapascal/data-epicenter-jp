@@ -1,4 +1,4 @@
 tag,year,month,day,hour,minute,second,time_se,latitude,latitude_m,latitude_se,longitude,longitude_m,longitude_se,depth,depth_se,magnitude_a,magnitude_a_type,magnitude_b,magnitude_b_type,time_table,evaluation,info_assistance,max_seismic,damate_scale,tsunami_scale,area_large,area_small,region,observation_points,flag
-J,2018,01,01,00,02,52.91,0.07, 37,1306, 020, 138,4804, 029,12.64,1.03,1.5,V,0, ,5,1,1, , , ,4,132,MID NIIGATA PREF        , 32,A
-J,2018,01,01,00,05,10.38,0.07, 37,0474, 014, 136,4629, 035,10.19,0.71,1,V,0, ,5,1,1, , , ,4,135,NOTO PENINSULA REGION   , 10,k
-J,2018,01,01,00,05,39.8,0.17, 33,1850, 054, 139,2995, 224,22.44,4.24,2.1,V,0, ,5,1,1, , , ,3,105,NEAR HACHIJOJIMA ISLAND , 14,A
+J,2018,01,01,00,02,52.91,0.07, 37,13.06,0.2, 138,48.04,0.29,12.64,1.03,1.5,V,0, ,5,1,1, , , ,4,132,MID NIIGATA PREF        , 32,A
+J,2018,01,01,00,05,10.38,0.07, 37,4.74,0.14, 136,46.29,0.35,10.19,0.71,1,V,0, ,5,1,1, , , ,4,135,NOTO PENINSULA REGION   , 10,k
+J,2018,01,01,00,05,39.8,0.17, 33,18.5,0.54, 139,29.95,2.24,22.44,4.24,2.1,V,0, ,5,1,1, , , ,3,105,NEAR HACHIJOJIMA ISLAND , 14,A

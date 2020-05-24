@@ -305,7 +305,9 @@ Optionaly use [plotly.js](https://plotly.com/javascript/) or [ArcGIS.js](https:/
 
 Quick simple demo: online [codesandbox](https://codesandbox.io/s/arcgis-demo-zpuyi?file=/src/App.tsx)
 
-![image](https://user-images.githubusercontent.com/30466424/82745513-395e8980-9dc0-11ea-9273-835388d0961b.png)
+Related repo: [epicenter-view](https://github.com/ibarapascal/epicenter-view)
+
+![image](https://user-images.githubusercontent.com/30466424/82753566-89aa0b80-9e01-11ea-8efe-e6b6ae33ad9e.png)
 
 ---
 

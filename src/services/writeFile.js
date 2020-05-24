@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 module.exports = {
-  writeFile: (path, list) => fs.writeFile(path, extractAsCSV(list), 'utf8', (err) => {
+  writeFile: (path, list) => list.length !== 0 && fs.writeFile(path, extractAsCSV(list), 'utf8', (err) => {
     if (err) {
       console.log('Some error occured - file either not saved or corrupted file saved.');
     } else{

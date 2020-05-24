@@ -37,9 +37,25 @@ rd.readFiles('raw\\', (fileName, content) => {
  */
 const mergeAttrs = (obj, options) => {
   options.forEach(x => {
-    const value = x.merge.reduce((res, y) => ((
-      res += obj[y]
-    ), res), '');
+    let value = '';
+    switch (x.to) {
+      case 'timestamp':
+        const list = x.merge.map(x => x !== 'month' ? Number(obj[x]) : Number(obj[x]) - 1);
+        value = new Date(...list).getTime() / 1000;
+        break;
+      case 'latitude':
+      case 'longitude':
+        const preNum = obj[x.to]
+          .split('')
+          .map(x => x.replace(' ', '0'))
+          .join('');
+        const sufNum = (obj[`${x.to}_m`] / 60)
+          .toFixed(4);
+        value = Number(`${preNum}${sufNum.slice(1)}`);
+        break;
+      default:
+        break;
+    }
     x.merge.forEach(y => delete obj[y]);
     obj[x.to] = value;
   })
@@ -49,7 +65,7 @@ const mergeAttrs = (obj, options) => {
 const mergeOptions = [
   {
     merge: ['year', 'month', 'day', 'hour', 'minute', 'second'],
-    to: 'time'
+    to: 'timestamp'
   },
   {
     merge: ['latitude', 'latitude_m'],
@@ -77,8 +93,8 @@ const filterData = (list) => {
   // range
   return usedList.filter(x => {
     const mag = Number(x.magnitude_a);
-    const lon = formatLL(x.longitude);
-    const lat = formatLL(x.latitude);   
+    const lon = Number(x.longitude);
+    const lat = Number(x.latitude);   
     return mag >= 5
       && lon >= 120
       && lon <= 150
@@ -87,22 +103,8 @@ const filterData = (list) => {
   }).slice();
 }
 
-/**
- * Hanlde the situation of `- 91234` to later compare
- * @param {string} str 
- */
-const formatLL = (str) => {
-  const strList = str.split("");
-  strList.splice(-4, 0, ".");
-  return Number(
-    strList
-      .map(x => x.replace(' ', '0'))
-      .join('')
-    );
-}
-
 const usedAttrs = [
-  'time',
+  'timestamp',
   'latitude',
   'longitude',
   'depth',

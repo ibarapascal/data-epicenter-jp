@@ -12,7 +12,8 @@
         "<node_internals>/**"
       ],
       // "program": "${workspaceFolder}\\src\\raw2csv.js",
-      "program": "${workspaceFolder}\\src\\raw2usercase.js"
+      // "program": "${workspaceFolder}\\src\\raw2usercase.js",
+      "program": "${workspaceFolder}\\src\\csv2json.js"
     }
   ]
 }

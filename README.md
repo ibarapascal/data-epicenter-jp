@@ -244,7 +244,22 @@ Smaller, usable [sample data](https://github.com/ibarapascal/data-epicenter-jp/t
 _Notice that github allows max 100MB for a single file, so we are still safe for another couple of years. :)_  
 _[Github: Working with large files](https://help.github.com/en/github/managing-large-files/working-with-large-files)_
 
-JSON: TODO
+```json
+{
+  "data": [
+    {
+      "depth": "388",
+      "magnitude_a": "7",
+      "timestamp": "441795821",
+      "latitude": "33.6233",
+      "longitude": "136.8383"
+    },
+    ...
+  ]
+}
+```
+
+JSON [samples here](https://github.com/ibarapascal/data-epicenter-jp/tree/master/json/sample)
 
 ## 3. Scripts
 
@@ -259,6 +274,12 @@ Basically keep untouched.
 >Generate the data you can use in your project. See the [sample data](https://github.com/ibarapascal/data-epicenter-jp/tree/master/csv/sample)
 
 Feel free to customize this to make the data happy for your use case.
+
+### [csv2json.js](https://github.com/ibarapascal/data-epicenter-jp/blob/master/src/csv2json.js)
+
+>Format csv to json file. See the [sample data](https://github.com/ibarapascal/data-epicenter-jp/tree/master/json/sample)
+
+Could be used as mock data for application development.
 
 ## 4. Develop
 
@@ -282,7 +303,9 @@ TODO
 
 Optionaly use [plotly.js](https://plotly.com/javascript/) or [ArcGIS.js](https://developers.arcgis.com/javascript/latest/sample-code/visualization-vv-opacity-animate/index.html) to show it!
 
-TODO
+Quick simple demo: online [codesandbox](https://codesandbox.io/s/arcgis-demo-zpuyi?file=/src/App.tsx)
+
+![image](https://user-images.githubusercontent.com/30466424/82745513-395e8980-9dc0-11ea-9273-835388d0961b.png)
 
 ---
 

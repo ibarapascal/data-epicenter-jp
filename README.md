@@ -1,5 +1,9 @@
 # Data of earthquake epicenter in Japan
 
+<div style="text-align: left">
+  <img src="https://hitcounter.pythonanywhere.com/count/tag.svg?url=https://github.com/ibarapascal/data-epicenter-jp" alt="Hits">
+</div>
+
 ## 1. Look what we've got here
 
 - Formated Japan epicenter data in csv, json.  
@@ -12,7 +16,7 @@
 
 [Raw data (~330MB)](https://github.com/ibarapascal/data-epicenter-jp/tree/master/raw) from [official source](#6-source) => formated [csv data (~430MB)](https://github.com/ibarapascal/data-epicenter-jp/tree/master/csv/base) which can be used easier.
 
-Time Range: 1983 - 201808
+Time Range: 1983 - 2018/08
 
 formated (base):  
 
@@ -65,11 +69,11 @@ formated (base):
       <td>52.91</td>
       <td>0.07</td>
       <td>37</td>
-      <td>1306</td>
-      <td>020</td>
+      <td>13.06</td>
+      <td>0.2</td>
       <td>138</td>
-      <td>4804</td>
-      <td>029</td>
+      <td>48.04</td>
+      <td>0.29</td>
       <td>12.64</td>
       <td>1.03</td>
       <td>1.5</td>
@@ -99,11 +103,11 @@ formated (base):
       <td>10.38</td>
       <td>0.07</td>
       <td>37</td>
-      <td>0474</td>
-      <td>014</td>
+      <td>4.74</td>
+      <td>0.14</td>
       <td>136</td>
-      <td>4629</td>
-      <td>035</td>
+      <td>46.29</td>
+      <td>0.35</td>
       <td>10.19</td>
       <td>0.71</td>
       <td>1</td>
@@ -162,60 +166,80 @@ Smaller, usable [sample data](https://github.com/ibarapascal/data-epicenter-jp/t
   <thead>
     <tr id="LC1" class="js-file-line">
       <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
-        <th>depth</th>
-        <th>magnitude_a</th>
-        <th>time</th>
-        <th>latitude</th>
-        <th>longitude</th>
+      <th>depth</th>
+      <th>magnitude_a</th>
+      <th>timestamp</th>
+      <th>latitude</th>
+      <th>longitude</th>
     </tr>
   </thead>
   <tbody>
-      <tr id="LC2" class="js-file-line">
-        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
-          <td>388</td>
-          <td>7</td>
-          <td>19840101180341</td>
-          <td> 33374 </td>
-          <td> 136503 </td>
-      </tr>
-      <tr id="LC3" class="js-file-line">
-        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
-          <td>43</td>
-          <td>5.6</td>
-          <td>19840117201340.6</td>
-          <td> 36271 </td>
-          <td> 141146 </td>
-      </tr>
-      <tr id="LC4" class="js-file-line">
-        <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
-          <td>43</td>
-          <td>5.9</td>
-          <td>19840118003156.3</td>
-          <td> 36269 </td>
-          <td> 141158 </td>
-      </tr>
-      <tr id="LC5" class="js-file-line">
-        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
-          <td>87</td>
-          <td>5.6</td>
-          <td>19840123163456.2</td>
-          <td> 29085 </td>
-          <td> 130392 </td>
-      </tr>
-      <tr id="LC6" class="js-file-line">
-        <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
-          <td>70</td>
-          <td>5.1</td>
-          <td>1984012518355.8</td>
-          <td> 42144 </td>
-          <td> 143098 </td>
-      </tr>
+    <tr id="LC5861" class="js-file-line">
+      <td
+        id="L5861"
+        class="blob-num js-line-number"
+        data-line-number="5861"
+      ></td>
+      <td>39.67</td>
+      <td>5.1</td>
+      <td>1482513902</td>
+      <td>36.7282</td>
+      <td>141.8532</td>
+    </tr>
+    <tr id="LC5862" class="js-file-line">
+      <td
+        id="L5862"
+        class="blob-num js-line-number"
+        data-line-number="5862"
+      ></td>
+      <td>167</td>
+      <td>5.3</td>
+      <td>1482722835</td>
+      <td>22.1912</td>
+      <td>143.42</td>
+    </tr>
+    <tr id="LC5863" class="js-file-line">
+      <td
+        id="L5863"
+        class="blob-num js-line-number"
+        data-line-number="5863"
+      ></td>
+      <td>10.84</td>
+      <td>6.3</td>
+      <td>1482928729</td>
+      <td>36.7202</td>
+      <td>140.5742</td>
+    </tr>
+    <tr id="LC5864" class="js-file-line">
+      <td
+        id="L5864"
+        class="blob-num js-line-number"
+        data-line-number="5864"
+      ></td>
+      <td>192</td>
+      <td>5.3</td>
+      <td>1482932774</td>
+      <td>25.2528</td>
+      <td>141.0795</td>
+    </tr>
+    <tr id="LC5865" class="js-file-line">
+      <td
+        id="L5865"
+        class="blob-num js-line-number"
+        data-line-number="5865"
+      ></td>
+      <td>27.35</td>
+      <td>5.4</td>
+      <td>1483128507</td>
+      <td>37.355</td>
+      <td>141.4098</td>
+    </tr>
   </tbody>
 </table>
 
 [DT_JP_BaseAttrs_M5.csv](https://github.com/ibarapascal/data-epicenter-jp/blob/master/csv/sample/DT_JP_BaseAttrs_M5.csv): 5.8k records, 0.2MB  
-[DT_JP_BaseAttrs_M3.csv](https://github.com/ibarapascal/data-epicenter-jp/blob/master/csv/sample/DT_JP_BaseAttrs_M3.csv): 206k records, 8.5MB  
-[DT_JP_BaseAttrs_M1.csv](https://github.com/ibarapascal/data-epicenter-jp/blob/master/csv/sample/DT_JP_BaseAttrs_M1.csv): 1.8M records, 79.7MB
+[DT_JP_BaseAttrs_M3.csv](https://github.com/ibarapascal/data-epicenter-jp/blob/master/csv/sample/DT_JP_BaseAttrs_M3.csv): 206k records, 7.1MB  
+[DT_JP_BaseAttrs_M1.csv](https://github.com/ibarapascal/data-epicenter-jp/blob/master/csv/sample/DT_JP_BaseAttrs_M1.csv): 1.8M records, 66.3MB
 
 _Notice that github allows max 100MB for a single file, so we are still safe for another couple of years. :)_  
 _[Github: Working with large files](https://help.github.com/en/github/managing-large-files/working-with-large-files)_
@@ -242,7 +266,7 @@ Feel free to customize this to make the data happy for your use case.
 
 a). Clone the repo (no need for large dir `/csv`, `/raw`)
 
-```
+```shell
 npm install
 ```
 
